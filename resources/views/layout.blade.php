@@ -139,7 +139,7 @@
 
 <div class="container">
 
-    <nav class="navbar navbar-expand-lg mt-3 mb-3" style="background-color: #e3f2fd; border-radius: 8px;">
+    <nav class="navbar navbar-expand-lg mt-3 mb-3 shadow-sm" style="background-color: #e3f2fd; border-radius: 8px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
