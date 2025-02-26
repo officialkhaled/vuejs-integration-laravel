@@ -9,8 +9,11 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('home');
-});
+})->name('welcome');
 
+Route::get('/{pathMatch}', function () {
+    return view('home');
+})->where('pathMatch', '.*');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/', [CounterController::class, 'index'])->name('index');
