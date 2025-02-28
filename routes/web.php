@@ -1,26 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CounterController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-})->name('welcome');
+//Route::get('/{pathMatch}', function () {
+//    return view('layout');
+//})->where('pathMatch', '.*');
 
-Route::get('/{pathMatch}', function () {
-    return view('home');
-})->where('pathMatch', '.*');
-
-
-
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('/', [CounterController::class, 'index'])->name('index');
-    Route::get('/create', [CounterController::class, 'create'])->name('create');
-    Route::post('/', [CounterController::class, 'store'])->name('store');
-    Route::get('{counter}/edit', [CounterController::class, 'edit'])->name('edit');
-    Route::put('{counter}', [CounterController::class, 'update'])->name('update');
-});
+Route::get('/{any}', function () {
+    return view('layout');
+})->where('any', '.*')->name('app');
