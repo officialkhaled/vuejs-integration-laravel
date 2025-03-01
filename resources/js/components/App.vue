@@ -1,13 +1,9 @@
 <template>
-
+    <router-view/>
 </template>
 
 <script>
 export default {
-    name: "EventRegistration"
+    name: "App"
 }
 </script>
-
-<style scoped>
-
-</style>
