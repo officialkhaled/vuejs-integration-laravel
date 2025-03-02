@@ -1,35 +1,5 @@
 <template>
     <section class="container-fluid">
-        <nav class="navbar navbar-expand-lg mt-3 mb-3 shadow-sm" style="background-color: #e3f2fd; border-radius: 8px;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
         <div class="container-fluid py-4">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h4 class="mb-0">Dashboard Overview</h4>
@@ -165,11 +135,17 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center flex-column mt-6">
+            <div class="d-flex justify-content-center flex-row mt-6 gap-1">
 
                 <button type="button" class="shadow-sm btn btn-primary btn-sm mt-3" id="liveToastBtn" @click="showToast">
                     Show live toast
                 </button>
+                <a href="/invoice-list" type="button" class="shadow-sm btn btn-info btn-sm mt-3">
+                    <i class="fa-solid fa-list"></i>&nbsp;&nbsp;Invoice List
+                </a>
+                <a href="/invoice-create" type="button" class="shadow-sm btn btn-success btn-sm mt-3">
+                    <i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Create Invoice
+                </a>
 
                 <div class="toast-container position-fixed bottom-0 end-0 p-3">
                     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">

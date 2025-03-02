@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5>Add Invoice</h5>
+                        <h5><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Add Invoice</h5>
                         <button type="button" class="btn btn-sm btn-primary" @click="createInvoice">
                             <i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back
                         </button>

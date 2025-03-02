@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5>Invoices</h5>
+                        <h5><i class="fa-solid fa-list"></i>&nbsp;&nbsp;Invoices</h5>
                         <div>
                             <div class="input-group flex-nowrap">
                                 <input type="text" name="search-invoice" class="form-control" placeholder="Search (#ID)" aria-label="Search" aria-describedby="search-invoice"
